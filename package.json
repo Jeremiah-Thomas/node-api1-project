@@ -4,8 +4,9 @@
   "description": "Node API 1 Project Code",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand"
+    "start": "nodemon index.js",
+    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
+    "server": "nodemon ./api/server.js"
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
@@ -19,6 +20,8 @@
     "url": "git+https://github.com/BloomInstituteOfTechnology/node-api1-project.git"
   },
   "dependencies": {
-    "nanoid": "^3.3.4"
+    "express": "^4.18.1",
+    "nanoid": "^3.3.4",
+    "nodemon": "^2.0.19"
   }
 }
